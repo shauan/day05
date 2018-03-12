@@ -5,14 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link type="stylesheet" type="text/css" href="born/lib/slick-1.8.0/slick/slick.css">
+    <link type="stylesheet" type="text/css" href="born/lib/slick-1.8.0/slick/slick-theme.css">
     <link type="stylesheet" type="text/css" href="born/static/css/main.css">
 </head>
 <body>
 
 
+    <div class='container'>
+        <div class='single-item'>
+            <img src="born/img/171115-carousel-party-platters.jpg" />
+            <img src="born/img/180124-carousel-bbpd-steak-lobster-video-v3.jpg" />
+            <img src="born/img/180124-carousel-bbpd-steak-lobster.jpg" />
+            <img src="born/img/180215-carousel-nascar-bloomin-monday.jpg" />
+            <img src="born/img/180221-carousel-dine-rewards-sweepstakes.jpg" />
+            <img src="born/img/180312-carousel-3pt-rib-bloom-video.jpg" />
+            <img src="born/img/180312-carousel-3pt-rib-bloom.jpg" />
+        </div>
+    </div>
 
 
+
+<script src="born/lib/jquery-3.3.1.min.js"></script>
 <script src="born/static/js/app.min.js"></script>
-<script src="born/js/lib/jquery-3.3.1.min.js"></script>
+<script src="born/lib/slick-1.8.0/slick/slick.min.js"></script>
+<script>
+
+    $(".single-item").slick({
+        dots: true
+    });
+    
+</script>
 </body>
 </html>
