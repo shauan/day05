@@ -1,0 +1,9 @@
+{
+	"plugins": {
+    	"autoprefixer": {},
+    	"cssnano": {
+    		"sourcemap": true,
+			"mergeRules": true
+    	}
+    }
+}
