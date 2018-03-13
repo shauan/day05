@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Restaurant</title>
-    <link rel="stylesheet" type="text/css" href="born/static/css/style.css">
     <link rel="stylesheet" type="text/css" href="born/lib/slick-1.8.0/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="born/lib/slick-1.8.0/slick/slick-theme.css">
-    
-    
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="born/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 </head>
 <body>
-<h1>asdasd</h1>
 
 <header>
     <nav id="main-nav">
         <div class="wrapper">
-            
+            <div class="logo-section">
+                <a href="index.html" class="logo">
+                    <img src="/born/img/Outback-Steakhouse-Logo-Black.png">
+                </a>
+                <button class="mb-button">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
             <ul>
-                <li><a href="index.html">home</a></li>  
+                <li class="active"><a href="index.html">home</a></li>  
                 <li><a href="menu.html">menu</a></li>
                 <li><a href="ordernow.html">order now</a></li>
                 <li><a href="waitlist.html">wait list</a></li>
@@ -31,14 +37,7 @@
 </header>
 
 
-
-
-
-
-
-
-    
-    <div class='container'>
+<section id="hero-banner">
         <div class='single-item'>
             <img src="born/img/171115-carousel-party-platters.jpg" />
             <img src="born/img/180124-carousel-bbpd-steak-lobster-video-v3.jpg" />
@@ -48,7 +47,37 @@
             <img src="born/img/180312-carousel-3pt-rib-bloom-video.jpg" />
             <img src="born/img/180312-carousel-3pt-rib-bloom.jpg" />
         </div>
+</section>
+
+
+<section id="rewards">
+    <div class="wrapper">
+        <h2>sign up for offers and rewards</h2>
+        <div class="offer-forms">
+            <form action="">
+                <div class="offer-wrapper">
+                    <input type="text">
+                </div>
+                <!-- <div class="offer-wrapper">
+                    <input type="text">
+                </div>
+                <div class="offer-wrapper">
+                    <input type="text">
+                </div>
+                <div class="offer-wrapper">
+                    <input type="text">
+                </div>
+                <div class="offer-wrapper">
+                    <input type="text">
+                </div> -->
+                
+
+                <p>When you join Dine Rewards we'll use this phone number to easily identify your account in our restaurants.</p>
+            </form>
+        </div>
     </div>
+</section>
+
 
 
 
@@ -58,7 +87,11 @@
 <script>
 
     $(".single-item").slick({
-        dots: true
+        arrows: true,
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        speed: 300
     });
     
 </script>

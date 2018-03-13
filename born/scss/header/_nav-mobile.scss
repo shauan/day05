@@ -1,0 +1,30 @@
+@media screen and (max-width: $mobile) {
+
+    #main-nav {
+        .logo-section {
+            float: none;
+        }
+
+        ul {
+            max-height: 0;
+            width: 100%;
+        }
+
+        li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 15px;
+        }
+
+        .mb-button {
+            display: inline;
+        }
+
+        .show {
+            max-height: 20em;
+        }
+    }
+
+
+
+}

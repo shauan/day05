@@ -1,0 +1,11 @@
+
+.slick-dots
+li button {
+
+}
+
+.slick-dots
+li.slick-active
+button:before {
+    color: $dark-red;
+}
