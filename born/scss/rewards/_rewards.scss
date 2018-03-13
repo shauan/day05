@@ -1,9 +1,11 @@
 #rewards {
-    font-family: $roboto;
+    background-color: $light-black;
     background-image: url('/born/img/texture-slate.png');
     background-size: contain;
-    background-color: $light-black;
-
+    margin-top: 4%;
+    font-family: $roboto;
+    overflow: hidden;
+    padding-bottom: 40px;
 
     h2 {
         color: $white;
@@ -11,12 +13,18 @@
         letter-spacing: 0.1rem;
         text-transform: uppercase;
         font-weight: 700;
-        padding: 40px 0;
+        padding: 40px 0 20px 0;
     }
 
+    // LEFT SIDE 
     .offer-forms {
         width: 56%;
         overflow: hidden;
+        float: left;
+
+        .remove-input {
+            display: none;
+        }
     }
 
     .offer-wrapper {
@@ -25,7 +33,7 @@
         margin-bottom: 15px;
         overflow: hidden;
 
-        // Every first element on the row will give a margin-right
+        // Every first element on the row will set a margin-right
         &:nth-of-type(2n -1) {
             margin-right: 2%;
         }
@@ -55,10 +63,66 @@
     p {
         color: $white;
         float: left;
-        margin-left: 3%;
+        margin-left: 1%;
         width: 45%;
         text-align: left;
         font-size: 14px;
         line-height: 20px;
     }   
+    // RIGHT SIDE
+    .offer-signup {
+        float: left;
+        width: 44%;
+        overflow: hidden;
+        height: 200px;
+    }
+
+    .signup-checkbox {
+        display: flex;
+        width: 68%;
+        background: $brown;
+        padding: 20px 5px;
+        align-self: flex-start;
+        float: left;
+    }
+    input[type=checkbox] {
+        margin-right: 10px;
+        border: none;
+        border-radius: 0;
+        cursor: pointer;
+    }
+
+    h3 {
+        color: $white;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .signup-button {
+        width: 30%;
+        align-self: flex-start;
+        text-align: center;
+        float: left;
+
+        button {
+            padding: 24.2px 30px;
+            background: transparent;
+            border: solid 1px $white;
+            color: $white;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+    .sigunp-info {
+        width: 100%;
+        clear: both;
+        display: block;
+        overflow: hidden;
+
+        p {
+            padding-top: 10px;
+            width: 100%;
+        }
+    }
 }
