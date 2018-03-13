@@ -1,8 +1,13 @@
 #rewards {
     font-family: $roboto;
+    background-image: url('/born/img/texture-slate.png');
+    background-size: contain;
+    background-color: $light-black;
+
 
     h2 {
-        font-size: 1.4rem;
+        color: $white;
+        font-size: 2.6rem;
         letter-spacing: 0.1rem;
         text-transform: uppercase;
         font-weight: 700;
@@ -10,37 +15,50 @@
     }
 
     .offer-forms {
-        width: 50%;
-        background:goldenrod;
+        width: 56%;
         overflow: hidden;
-        padding: 10px;
     }
+
     .offer-wrapper {
-        width: 45%;
+        width: 48%;
+        float: left;
+        margin-bottom: 15px;
+        overflow: hidden;
 
-    }
+        // Every first element on the row will give a margin-right
+        &:nth-of-type(2n -1) {
+            margin-right: 2%;
+        }
 
-    form {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
     }
 
     input[type=text] {
         border-radius: 0;
-        overflow: hidden;
         background: $white;
-        border: none;
+        overflow: hidden;
+        border: solid 2px $light-yellow;
         color: $black;
         font-weight: 400;
-        padding: 0 20px;
         text-transform: uppercase;
-        position: relative;
         cursor: text;
-        padding: 10px;
+        padding: 25px;
         width: 100%;
+        outline: 0;
+        font-size: 16px;
+        box-sizing: border-box;
+        &::placeholder {
+            color: $light-yellow;
+            font-weight: 700;
+        }
     }
+
     p {
+        color: $white;
+        float: left;
+        margin-left: 3%;
         width: 45%;
+        text-align: left;
+        font-size: 14px;
+        line-height: 20px;
     }   
 }
