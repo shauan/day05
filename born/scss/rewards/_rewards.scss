@@ -6,6 +6,7 @@
     font-family: $roboto;
     overflow: hidden;
     padding-bottom: 40px;
+    clear: both;
 
     h2 {
         color: $white;
@@ -15,7 +16,10 @@
         font-weight: 700;
         padding: 40px 0 20px 0;
     }
-
+    .hide-forms {
+        display: none;
+        animation-delay: 3.5s;
+    }
     // LEFT SIDE 
     .offer-forms {
         width: 56%;
@@ -23,7 +27,7 @@
         float: left;
 
         .remove-input {
-            display: none;
+            opacity: 0;
         }
     }
 
@@ -87,8 +91,7 @@
     }
     input[type=checkbox] {
         margin-right: 10px;
-        border: none;
-        border-radius: 0;
+        display: none;
         cursor: pointer;
     }
 

@@ -4,18 +4,38 @@ Website layout
 ################
 */
 @import "helpers/variables";
+@import "helpers/mixins";
 @import "helpers/common";
 @import "helpers/reset";
 @import "helpers/slick";
+@import "helpers/buttons";
+
+
+/*
+################
+Header
+################
+*/
+@import "header/nav";
+
+
+/*
+################
+Footer
+################
+*/
+@import "footer/footer";
+
+
 /*
 ################
 Website pages
 ################
 */
-@import "header/nav";
 @import "header/nav-mobile";
 @import "hero/hero";
 @import "rewards/rewards";
+@import "product-grid/product-grid";
 
 
 

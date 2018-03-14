@@ -1,0 +1,43 @@
+@mixin podInfo {
+    h2 {
+        text-shadow: 2px 2px 4px rgba(0,0,0,.15);
+        font-size: 2.6em;
+        font-weight: 700;
+        width: 100px;
+        line-height: 45px;
+    }
+    p {
+        padding: 10px 0 40px 0;
+        font-size: 17px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,.15);
+    }
+}
+@mixin podInfoGrid {
+    h2 {
+        text-shadow: 2px 2px 4px rgba(0,0,0,.15);
+        font-size: 2em;
+        font-weight: 700;
+        width: 100px;
+    }
+    p {
+        padding: 10px 0 40px 0;
+        font-size: 17px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,.15);
+    }
+}
+
+@mixin podImg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: $white;
+        padding: 15px;
+        text-transform: uppercase;
+        background-position: center;
+}
+
+@mixin footerDetails {
+    text-decoration: none;
+    color: $black;
+    cursor: pointer;
+    text-transform: uppercase;
+}

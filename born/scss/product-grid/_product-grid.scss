@@ -1,0 +1,77 @@
+#product-grid {
+    font-family: $roboto;
+    margin: 40px 0;
+    display: block;
+    overflow: hidden;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &:nth-child(2) {
+            margin: 25px 0;
+        }
+    }
+
+    .pod-6 {
+        width: 48%;
+        border: 2px solid $black;
+        cursor: pointer;
+    }
+    
+    .pod-3 {
+        width: 32%;
+        border: 2px solid $black;
+        height: 100%;
+        cursor: pointer;
+        &:first-child {
+            .btn-secondary {
+                margin-top: 32px;
+            }
+        }
+        &:last-child {
+            .btn-secondary {
+                margin-top: 63px;
+            }
+        }
+    }
+
+    .pod-wrapper {
+        background-image: url('/born/img/pod7.jpg');
+        @include podImg;
+        @include podInfo;
+    }
+    
+    .pod-wrapper_top-right {
+        background-image: url('/born/img/pod6.jpg');
+        @include podImg;
+        @include podInfo;
+    }
+
+    .pod-wrapper_center-left {
+        background-image: url('/born/img/pod5.jpg');
+        @include podImg;
+        @include podInfoGrid;
+    }
+    .pod-wrapper_center-center {
+        background-image: url('/born/img/pod4.jpg');
+        @include podImg;
+        @include podInfoGrid;
+    }
+    .pod-wrapper_center-right {
+        background-image: url('/born/img/pod3.jpg');
+        @include podImg;
+        @include podInfoGrid;
+    }
+    .pod-wrapper_bottom-left {
+        background-image: url('/born/img/pod2.jpg');
+        @include podImg;
+        @include podInfoGrid;
+    }
+    .pod-wrapper_bottom-right {
+        background-image: url('/born/img/pod1.jpg');
+        @include podImg;
+        @include podInfoGrid;
+    }
+
+}
